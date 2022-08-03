@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\Vojtěch\Documents\FI MU 4. semestr\PV178\PV178Project\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Data\Lecture.cs" />
+    <Compile Include="Data\PrintHelper.cs" />
+    <Compile Include="Data\Score.cs" />
+    <Compile Include="Data\Seminar.cs" />
+    <Compile Include="Data\Subject.cs" />
+    <Compile Include="Data\Table.cs" />
+    <Compile Include="Data\TimeTable.cs" />
+    <Compile Include="Data\Tutor.cs" />
+    <Compile Include="Filters\NameFilter.cs" />
+    <Compile Include="Filters\ScoreFilter.cs" />
+    <Compile Include="Filters\TimeFilter.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.Designer.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="LoginForm.cs" />
+    <Compile Include="LoginForm.Designer.cs" />
+    <Compile Include="obj\Debug\net5.0-windows\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net5.0-windows\SeminarHelper.AssemblyInfo.cs" />
+    <Compile Include="Parser.cs" />
+    <Compile Include="PopupTextWindow.cs" />
+    <Compile Include="PopupTextWindow.Designer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Registrator.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net5.0-windows\SeminarHelper.deps.json" />
+    <Content Include="bin\Debug\net5.0-windows\SeminarHelper.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\net5.0-windows\SeminarHelper.runtimeconfig.json" />
+    <Content Include="obj\Debug\net5.0-windows\SeminarHelper.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net5.0-windows\SeminarHelper.designer.deps.json" />
+    <Content Include="obj\Debug\net5.0-windows\SeminarHelper.designer.runtimeconfig.json" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\SeminarHelper.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="LoginForm.resx" />
+    <EmbeddedResource Include="PopupTextWindow.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net5.0-windows\chromedriver.exe" />
+    <None Include="bin\Debug\net5.0-windows\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\net5.0-windows\ref\SeminarHelper.dll" />
+    <None Include="bin\Debug\net5.0-windows\SeminarHelper.dll" />
+    <None Include="bin\Debug\net5.0-windows\SeminarHelper.exe" />
+    <None Include="bin\Debug\net5.0-windows\SeminarHelper.pdb" />
+    <None Include="bin\Debug\net5.0-windows\WebDriver.dll" />
+    <None Include="obj\Debug\net5.0-windows\apphost.exe" />
+    <None Include="obj\Debug\net5.0-windows\ref\SeminarHelper.dll" />
+    <None Include="obj\Debug\net5.0-windows\SeminarHelper.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net5.0-windows\SeminarHelper.assets.cache" />
+    <None Include="obj\Debug\net5.0-windows\SeminarHelper.csproj.CopyComplete" />
+    <None Include="obj\Debug\net5.0-windows\SeminarHelper.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net5.0-windows\SeminarHelper.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\net5.0-windows\SeminarHelper.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\net5.0-windows\SeminarHelper.dll" />
+    <None Include="obj\Debug\net5.0-windows\SeminarHelper.Form1.resources" />
+    <None Include="obj\Debug\net5.0-windows\SeminarHelper.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net5.0-windows\SeminarHelper.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net5.0-windows\SeminarHelper.LoginForm.resources" />
+    <None Include="obj\Debug\net5.0-windows\SeminarHelper.pdb" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\SeminarHelper.csproj.nuget.g.props" />
+    <None Include="obj\SeminarHelper.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="92.0.4515.10700" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="chromedriver_win32\" />
+  </ItemGroup>
+
+</Project>
